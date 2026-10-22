@@ -55,6 +55,23 @@ function renderGames() {
     const category = document.createElement("span");
     category.className = "category";
     category.textContent = game.category;
+
+    const status = game.status || "untested";
+
+    const statusBadge = document.createElement("span");
+    statusBadge.className = `status-badge status-${status}`;
+
+    const statusLabels = {
+    working: "Working",
+    broken: "Not Working",
+    offline: "Temporarily Offline",
+    untested: "Untested"
+                        };
+  
+    statusBadge.textContent = statusLabels[status] || "Untested";
+
+
+    
     top.append(icon, category);
 
     const title = document.createElement("h3");
@@ -82,6 +99,7 @@ function renderGames() {
 
     bottom.append(domain, link);
     card.append(top, title, tag, bottom);
+    card.append(statusBadge);
     grid.appendChild(card);
   });
 
