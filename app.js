@@ -66,10 +66,9 @@ function renderGames() {
     broken: "Not Working",
     offline: "Temporarily Offline",
     untested: "Untested"
-                        };
+    };
   
     statusBadge.textContent = statusLabels[status] || "Untested";
-
 
     
     top.append(icon, category);
