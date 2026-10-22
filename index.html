@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="A community-curated directory of browser-playable games. Search, browse, and launch games from their original websites.">
+  <title>Browser Arcade — Play in your browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Browser Arcade home"><span class="brand-mark">▶</span><span>browser<span class="brand-accent">arcade</span></span></a>
+    <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Contribute <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> THE COMMUNITY GAME SHELF</div>
+      <h1>Your next game.<br><span>No install required.</span></h1>
+      <p class="hero-copy">A hand-picked collection of browser games, classics, and community projects. Find one and jump straight in.</p>
+      <div class="hero-stats"><div><strong id="game-count">24</strong><span>LINKS TO EXPLORE</span></div><i></i><div><strong>0</strong><span>INSTALLS NEEDED*</span></div></div>
+      <p class="tiny-note">*Some games may require downloads, compatible controls, or a supported browser.</p>
+    </section>
+    <section class="library" aria-label="Game library">
+      <div class="library-heading"><div><p class="section-kicker">THE LIBRARY</p><h2>Pick your next obsession</h2></div><span class="result-count" id="result-count">24 games</span></div>
+      <div class="controls">
+        <label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search games, genres, tags…" autocomplete="off" aria-label="Search games"></label>
+        <div class="filters" id="filters" aria-label="Filter by category"></div>
+      </div>
+      <div class="game-grid" id="game-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><div class="empty-icon">⌕</div><h3>No games found</h3><p>Try a different search or category.</p><button id="reset">Clear filters</button></div>
+    </section>
+    <section class="notice">
+      <div class="notice-icon">ⓘ</div><div><strong>Links open on their original websites</strong><p>This directory does not host game files. Third-party sites can change, go offline, show ads, or have different privacy and safety practices. Only use sites you trust.</p></div>
+    </section>
+  </main>
+  <footer><span>▶ browserarcade</span><span>Made for curious players · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Open-source directory</a></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
